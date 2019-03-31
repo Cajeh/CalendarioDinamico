@@ -19,6 +19,11 @@ class MyComponent extends React.Component {
     }else{
       icon = require('./botdownbackwhite.png')
     }
+    if(this.props.recep == 1){
+      icon2= require('./botdownbackwhite.png')
+    }else{
+      icon2 = require('./botupbackwhite.png')
+    }
     if(this.props.toScroll === true){
     return (
       <View>
@@ -50,7 +55,7 @@ class MyComponent extends React.Component {
       <View style={{flex:1,left:40}}>
       <Image
           style={{width: 50, height: 50}}
-          source={require('./botupbackwhite.png')}
+          source={icon2}
         />
         </View>
        <View style={{flex:1}}></View>
@@ -119,7 +124,7 @@ class MyComponent extends React.Component {
       <View style={{flex:1,left:40}}>
       <Image
           style={{width: 50, height: 50}}
-          source={require('./botupbackwhite.png')}
+          source={icon2}
         />
         </View>
        <View style={{flex:1}}></View>
